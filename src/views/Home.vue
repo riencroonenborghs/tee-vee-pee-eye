@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// import { TvmazeShowAPIService } from '@/services/TvmazeShowAPIService'
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
+  created () {
+    // const service = new TvmazeShowAPIService(this.$http)
+    // service.search('regular').then((shows) => console.log(shows))
   }
 }
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+</style>
