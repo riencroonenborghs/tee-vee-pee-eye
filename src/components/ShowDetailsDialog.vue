@@ -58,6 +58,7 @@ export default {
 .summary {
   padding: 0px 20px 0px 20px;
   text-align: justify;
+  max-width: 300px;
 }
 .episode {
   width: 50%;

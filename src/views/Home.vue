@@ -4,14 +4,9 @@
 </template>
 
 <script>
-// import { TvmazeShowAPIService } from '@/services/TvmazeShowAPIService'
 
 export default {
-  name: 'Home',
-  created () {
-    // const service = new TvmazeShowAPIService(this.$http)
-    // service.search('regular').then((shows) => console.log(shows))
-  }
+  name: 'Home'
 }
 </script>
 

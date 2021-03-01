@@ -66,6 +66,7 @@ export default {
     unfollow (event) {
       this.$store.commit('unfollowShow', this.show.id)
       this.visible = false
+      this.$emit('loadShows')
       event.preventDefault()
       event.stopPropagation()
     },

@@ -9,8 +9,15 @@
       </flex-row>
     </md-toolbar>
 
+    <flex-row align-h="end" v-if="shows.length == 0">
+      <flex-col class="start">
+        <flex-row align-h="end"><md-icon style="margin: 0px; margin-right: 8px;">north</md-icon></flex-row>
+        <div>Add shows here</div>
+      </flex-col>
+    </flex-row>
+
     <flex-row wrap v-if="shows.length > 0">
-      <Show v-for="show in shows" :key="show.id" :show="show"></Show>
+      <Show v-for="show in shows" :key="show.id" :show="show" v-on:loadShows="loadShows()"></Show>
     </flex-row>
 
     <router-view/>
@@ -75,5 +82,8 @@ export default {
 }
 .md-card .md-card-media img {
   height: 266px;
+}
+.start {
+  padding: 16px;
 }
 </style>
